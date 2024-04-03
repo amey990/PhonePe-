@@ -142,22 +142,96 @@ class _HomepageState extends State<Homepage> {
                     padding: EdgeInsets.only(right: 240,top: 10),
                     child: Text("Transfer Money",style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold,color: Colors.white),),
                   ),
+
+                  Row(children: 
+                  [
+                    SizedBox(width: 40,),
+
+                    Padding(
+                      padding: EdgeInsets.only(top: 10,right: 10),
+                      child: Container(
+                        width: 57,
+                        height: 58,
+
+                        child: Icon(Icons.person, color: Colors.white,),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color:  Color.fromARGB(255, 190, 46, 171)
+                        ),
+                      ),
+                    ),
+
+                    SizedBox(width: 20,),
+
+                    //
+                    Padding(
+                      padding: EdgeInsets.only(top: 10,right: 10),
+                      child: Container(
+                        width: 57,
+                        height: 58,
+
+                        child: Icon(Icons.money_rounded,color: Colors.white,),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color:  Color.fromARGB(255, 190, 46, 171)
+                        ),
+                      ),
+                    ),
+
+
+                    SizedBox(width: 20,),
+
+                    //
+                    Padding(
+                      padding: EdgeInsets.only(top: 10,right: 10),
+                      child: Container(
+                        width: 57,
+                        height: 58,
+                        child: Icon(Icons.arrow_downward_rounded,color: Colors.white,),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color:  Color.fromARGB(255, 190, 46, 171)
+                        ),
+                      ),
+                    ),
+
+                    SizedBox(width: 20,),
+
+                    //
+                    Padding(
+                      padding: EdgeInsets.only(top: 10,right: 10),
+                      child: Container(
+                        width: 57,
+                        height: 58,
+                        child: Icon(Icons.account_balance_rounded,color: Colors.white,),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color:  Color.fromARGB(255, 190, 46, 171)
+                        ),
+                      ),
+                    ),
+
+                    SizedBox(width: 30,),
+                  ],),
+
+
                   Padding(
-                    padding: EdgeInsets.only(top: 93),
+                    padding: EdgeInsets.only(top: 35
+                    ),
                     child: Container(
                       width: 400,
-                      height: 40,         
+                      height: 30,         
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.only(bottomLeft: Radius.circular(15),bottomRight: Radius.circular(15)),
                         color:  Color.fromARGB(255, 97, 100, 128),
                       ),
 
                       child: Padding(
-                        padding: EdgeInsets.only(left: 10,top: 8),
+                        padding: EdgeInsets.only(left: 10,top: 4),
                         child: Row(
                           children: [
                             Padding(
-                              padding: EdgeInsets.only(bottom: 6,left: 3),
+                              padding: EdgeInsets.only(left: 3),
                               child: Text("UPI ID: 90828xxx81@ybl",style: TextStyle(fontSize: 17,fontWeight: FontWeight.normal,color: Color.fromARGB(255, 247, 247, 247)),),
                             ),
                           
@@ -314,14 +388,239 @@ class _HomepageState extends State<Homepage> {
             padding: EdgeInsets.only(left: 4,right: 4),
             child: Container(
               width:400,
-              height: 220,
+              height: 240,
               decoration: BoxDecoration
               (
                 borderRadius: BorderRadius.circular(15),
                 color:  Color.fromARGB(255, 27, 4, 31),
               ),
+
+              child: Column(children: 
+              [
+                Padding(
+                  padding: EdgeInsets.only(top: 7,right: 200),
+                  child: Text("Recharge & Pay Bills",style: TextStyle(fontSize: 17,fontWeight: FontWeight.w700,color: Colors.white),),
+                ),
+
+                Row(children: 
+                [
+
+                  Padding(
+                    padding: EdgeInsets.only(top: 30,left: 23),
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          width: 50,
+                          height: 40,
+                          child:Image.asset("assets/Images/mobile.png",fit: BoxFit.fill,color: Colors.white,),
+                          ),
+                          Text("Recharge",style: TextStyle(color: Colors.white,fontSize: 15),)
+                      ],
+                    ),
+                        
+                  ),
+
+                  SizedBox(width: 40,),
+            
+                  Padding(
+                    padding: EdgeInsets.only(top: 30,),
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          width: 50,
+                          height: 40,
+                          child: Image.asset("assets/Images/dth.png",fit: BoxFit.fill,color: Colors.white,),
+                        ),
+                        Text("DTH",style: TextStyle(color: Colors.white,fontSize: 15),)
+                      ],
+                    ),
+                  ),
+
+                  SizedBox(width: 40,),
+
+                  Padding(
+                    padding: EdgeInsets.only(top: 25),
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          width: 50,
+                          height: 40,
+                          child: Image.asset("assets/Images/bulb.png",fit: BoxFit.fill,color:Colors.white,),
+                        ),
+                        Text("Electricity",style: TextStyle(color: Colors.white,fontSize: 15),)
+                      ],
+                    ),
+                  ),
+
+                  SizedBox(width: 40,),
+
+
+                  Padding(
+                    padding: EdgeInsets.only(top: 25),
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          width: 50,
+                          height: 40,
+                          child: Image.asset("assets/Images/rent.png",fit: BoxFit.fill,color:Colors.white,),
+                        ),
+                        Text("Rent",style: TextStyle(color: Colors.white,fontSize: 15),)
+                      ],
+                    ),
+                  ),
+                ],),
+
+                
+
+                Row(children: 
+                [
+                  Padding(
+                    padding: EdgeInsets.only(top: 30,left: 32),
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          width: 50,
+                          height: 40,
+                          child: Image.asset("assets/Images/loan.png",fit: BoxFit.fill,color: Colors.white,),                   
+                        ),
+                        Text("Loan",style: TextStyle(color: Colors.white,fontSize: 15),)
+                      ],
+                    ),
+                  ),
+
+                  Padding(
+                    padding:EdgeInsets.only(left: 40,top: 27),
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          width: 50,
+                          height: 40,
+                          child: Image.asset("assets/Images/cylinder.png",fit: BoxFit.fill,color: Colors.white,),
+                        ),
+                        Text("Cylinder",style: TextStyle(color: Colors.white,fontSize: 15),)
+                      ],
+                    ),
+                  ),
+
+                  Padding(
+                    padding:EdgeInsets.only(top: 26,left: 34),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [
+                          Container
+                          (
+                            width: 50,
+                            height: 40,
+                            child: Image.asset("assets/Images/fasttag.png",fit:BoxFit.contain),
+                          ),
+                          Text("FAST Tag",style: TextStyle(color: Colors.white,fontSize: 15),)
+                        ],
+                      ),
+                    ),
+                  ),
+
+                  Padding(
+                    padding: EdgeInsets.only(top:20,left: 33 ),
+                    child: Column(
+                      children: [
+                        Container
+                        (
+                          width: 50,
+                          height: 50,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(18),
+                            color:  Color.fromARGB(255, 190, 46, 171)
+                          ),
+                          child: Icon(Icons.keyboard_arrow_right_outlined,color: Colors.white,),
+                        ),
+                        Text("See All",style: TextStyle(color: Colors.white,fontSize: 15),)
+                      ],
+                    ),
+                  )
+
+
+
+
+                ],)
+              ],),
             ),
           ),
+
+          SizedBox(height: 8,),
+
+          Container(
+            width: 400,
+            height: 120,
+            decoration: BoxDecoration
+              (
+                borderRadius: BorderRadius.circular(15),
+                color:  Color.fromARGB(255, 27, 4, 31),
+              ),
+
+          ),
+
+          SizedBox(height: 8,),
+
+          Container(
+            width: 400,
+            height: 200,
+            decoration: BoxDecoration
+              (
+                borderRadius: BorderRadius.circular(15),
+                color:  Color.fromARGB(255, 27, 4, 31),
+              ),
+          ),
+
+          SizedBox(height: 5,),
+
+          Padding(
+            padding: EdgeInsets.only(left: 4,right: 4),
+            child: Container(
+              width: 400,
+              height: 200,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20)
+              ),
+              child: Image.asset("assets/Images/add2.jpeg"),
+            ),
+          ),
+
+          SizedBox(height: 8,),
+
+          Container(
+            width: 400,
+            height: 120,
+            decoration: BoxDecoration
+              (
+                borderRadius: BorderRadius.circular(15),
+                color:  Color.fromARGB(255, 27, 4, 31),
+              ),
+          ),
+
+          SizedBox(height: 8,),
+          Container(
+            width: 400,
+            height: 120,
+            decoration: BoxDecoration
+              (
+                borderRadius: BorderRadius.circular(15),
+                color:  Color.fromARGB(255, 27, 4, 31),
+              ),
+          ),
+
+          SizedBox(height: 8,),
+
+          Container(
+            width: 400,
+            height: 120,
+            decoration: BoxDecoration
+              (
+                borderRadius: BorderRadius.circular(15),
+                color:  Color.fromARGB(255, 27, 4, 31),
+              ),
+          ),
+
 
           
          ],),
